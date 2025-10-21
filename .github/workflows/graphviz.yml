@@ -2,7 +2,7 @@ name: graphes
 on: [push]
 jobs:
   build:
-    runs-os: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Installation de graphviz
       run: sudo apt install graphviz
