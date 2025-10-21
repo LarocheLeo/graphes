@@ -1,0 +1,32 @@
+graph {
+node [style="filled" fillcolor="" ];
+edge [fontsize="20pt" color="red"fontcolor="blue" fontsize="12"];
+
+A [pos="10,5!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+B [pos="7,8!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+C [pos="7,4!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+D [pos="4,4!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+E [pos="5,1!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+F [pos="1,2!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+G [pos="2,6!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+H [pos="4,8!" image="icon_router.png" shape="none" fixedsize=true fontcolor="red" fontsize="20"];
+
+
+B -- A [label="1"];
+B -- H [label="2"];
+B -- C [label="2"];
+B -- G [label="4"];
+B -- D [label="9"];
+
+A -- C [label="4"];
+H -- G [label="14"];
+G -- D [label="1"];
+D -- C [label="1"];
+
+F -- G [label="6"];
+F -- D [label="3"];
+F -- E [label="1"];
+
+E -- D [label="1"];
+E -- C [label="3"];
+}
