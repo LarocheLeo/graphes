@@ -15,6 +15,7 @@ Il y a des balises.
 svg : 2,9 kb
 png : 12,5 kb
 
+## 2.4 Extraction d’informations automatisée dans du JSON
 ### Q2.17 - Exécuter la commande suivante :
 ### $ jq ’.artifacts[]’ gh-artifacts.json et comparer avec le contenu du fichier d’origine : vous récupérez uniquement le contenu du tableau "artifacts"
 
@@ -28,8 +29,7 @@ oui
 
 name 
 
-### Proposer un filtre pour jq qui permet de récupérer l’ensemble des ID de tous les artefacts, et
-rediriger vers un fichier liste-id.txt.
+### Proposer un filtre pour jq qui permet de récupérer l’ensemble des ID de tous les artefacts, et rediriger vers un fichier liste-id.txt.
 
 jq '.artifacts[].name' gh-artifacts.json > liste-id.txt
 
