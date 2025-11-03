@@ -31,5 +31,5 @@ name
 
 ### Proposer un filtre pour jq qui permet de récupérer l’ensemble des ID de tous les artefacts, et rediriger vers un fichier liste-id.txt.
 
-jq '.artifacts[].name' gh-artifacts.json > liste-id.txt
+jq '.artifacts[].id' gh-artifacts.json > liste-id.txt
 
